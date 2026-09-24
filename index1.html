@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Registration Form</h1>
+
+        <form id="studentForm">
+            <label>Student Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label>Course</label>
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option value="FSD">Full Stack Development</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+            </select>
+
+            <label>Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter phone number" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
